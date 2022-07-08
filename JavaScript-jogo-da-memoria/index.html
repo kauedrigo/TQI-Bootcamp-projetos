@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo da Memória</title>
+  </head>
+  <body>
+    <!-- botões -->
+    <div id="buttons" class="button-container">
+      <h1>BEM VINDO AO JOGO DA MEMÓRIA!</h1>
+      <p>Selecione o número de cartas para iniciar o jogo.</p>
+      <div class="button-wrapper">
+        <button class="btn">4 cartas</button>
+        <button class="btn">8 cartas</button>
+        <button class="btn">16 cartas</button>
+      </div>
+    </div>
+
+    <!-- cartas -->
+    <main id="main" class="container"></main>
+
+    <div id="end-game">
+      <p id="end-message"></p>
+      <a href="index.html">
+        <button id="end-button">RESTART</button>
+      </a>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

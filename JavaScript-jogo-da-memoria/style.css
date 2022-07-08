@@ -1,0 +1,110 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: pink;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  color: white;
+  font-family: Verdana;
+  font-weight: bold;
+}
+
+.button-container h1 {
+  font-size: 50px;
+}
+
+.button-container p {
+  font-size: 30px;
+}
+
+.button-wrapper {
+  z-index: 10;
+}
+
+.btn {
+  height: 30px;
+  width: 100px;
+  font-size: 20px;
+  margin: 10px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 370px;
+  width: 274px;
+  position: relative;
+}
+
+.card {
+  height: 180px;
+  width: 132px;
+  perspective: 1000px;
+  margin: auto;
+  position: relative;
+  transition: .5s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.card-front {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+.card-back {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: url("./card-back.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  backface-visibility: hidden;
+}
+
+#end-game {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 0px;
+  color: #fff;
+  font-size: 2em;
+  margin: 0;
+}
+
+#end-game p {
+  margin: 12px;
+}
+
+#end-game a {
+  text-decoration: none;
+}
+
+#end-game button {
+  display: none;
+  font-size: 20px;
+}
